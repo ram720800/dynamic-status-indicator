@@ -24,7 +24,7 @@ const App = () => {
 
   return (
     <div
-      className="scroll-hidden min-h-screen overflow-y-auto w-full flex flex-col items-center justify-between"
+      className="min-h-screen overflow-y-auto w-full flex flex-col items-center justify-start gap-8 px-4 pt-10 pb-16"
       style={{
         backgroundImage: `radial-gradient(circle at 1px 1px, rgba(247, 228, 236) 1px, transparent 0)`,
         backgroundSize: "8px 8px",

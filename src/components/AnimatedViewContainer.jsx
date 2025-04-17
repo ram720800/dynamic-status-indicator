@@ -7,7 +7,7 @@ const varients = {
 };
 const AnimatedViewContainer = ({ viewMode, children }) => {
   return (
-    <div className="flex flex-col items-center justify-between gap-6 w-full sm:mt-6">
+    <div className="flex flex-col items-center w-full gap-4 sm:mt-6">
       <AnimatePresence mode="wait">
         <motion.div
           key={viewMode}

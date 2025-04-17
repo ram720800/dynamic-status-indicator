@@ -11,7 +11,7 @@ const ViewModeToggle = ({ onChange }) => {
     onChange(value);
   };
   return (
-    <div className="flex flex-col items-center justify-between sm:gap-6 w-full">
+    <div className="flex flex-col items-center w-full gap-4 sm:gap-6 ">
       <h1 className="-ml-60 text-xl sm:text-3xl font-bold">
         Collectibles
       </h1>
