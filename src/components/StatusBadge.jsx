@@ -42,7 +42,7 @@ export default function AnimatedStatusButton() {
   return (
     <motion.button
       onClick={handleClick}
-      className={`fixed bottom-10 sm:bottom-20 mt-6 px-6 py-3 font-semibold rounded-full transition-all shadow-[0_5px_15px_rgba(0,0,0,0.08),0_15px_35px_-5px_rgba(25,28,33,0.2)] ring-1 ring-gray-950/5 flex items-center justify-center cursor-pointer`}
+      className={`px-6 py-3 font-semibold rounded-full transition-all shadow-[0_5px_15px_rgba(0,0,0,0.08),0_15px_35px_-5px_rgba(25,28,33,0.2)] ring-1 ring-gray-950/5 flex items-center justify-center cursor-pointer bg-white`}
       style={{
         backgroundColor: currentStatus ? currentStatus.color : "wl1",
         color: currentStatus ? currentStatus.text : "text-bl1",

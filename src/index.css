@@ -21,6 +21,14 @@ html {
   font-family: var(--font-Grandstander);
   color: var(--color-bl1);
 }
+.scroll-hidden {
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.scroll-hidden::-webkit-scrollbar {
+  display: none;
+}
 
 @custom-variant dark (&:is(.dark *));
 
@@ -139,3 +147,4 @@ html {
     @apply bg-background text-foreground;
   }
 }
+

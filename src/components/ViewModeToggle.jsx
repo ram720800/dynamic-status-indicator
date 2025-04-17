@@ -11,7 +11,10 @@ const ViewModeToggle = ({ onChange }) => {
     onChange(value);
   };
   return (
-    <div className="fixed top-36 flex flex-col items-center justify-between sm:gap-6 w-full">
+    <div className="flex flex-col items-center justify-between sm:gap-6 w-full">
+      <h1 className="-ml-60 text-xl sm:text-3xl font-bold">
+        Collectibles
+      </h1>
       <ToggleGroup
         type="single"
         value={view}
@@ -20,21 +23,21 @@ const ViewModeToggle = ({ onChange }) => {
       >
         <ToggleGroupItem
           value="list"
-          className="data-[state=on]:bg-pink2 data-[state=on]:text-white text-[16px] bg-gray-200 px-4 py-2 rounded-full flex items-center gap-2"
+          className="data-[state=on]:bg-pink2 data-[state=on]:text-white text-[16px] bg-wl2 px-2 sm:px-4 py-2 rounded-full flex items-center gap-2"
         >
           <List strokeWidth={3} className="w-10 h-10" />
           List view
         </ToggleGroupItem>
         <ToggleGroupItem
           value="card"
-          className="data-[state=on]:bg-pink2 data-[state=on]:text-white text-[16px] bg-gray-200 px-4 py-2 rounded-full flex items-center gap-2"
+          className="data-[state=on]:bg-pink2 data-[state=on]:text-white text-[16px] bg-wl2 px-2 sm:px-4 py-2 rounded-full flex items-center gap-2"
         >
           <LayoutGrid strokeWidth={3} className="w-10 h-10" />
           Card view
         </ToggleGroupItem>
         <ToggleGroupItem
           value="pack"
-          className="data-[state=on]:bg-pink2 data-[state=on]:text-white text-[16px] bg-gray-200 px-4 py-2 rounded-full flex items-center gap-2"
+          className="data-[state=on]:bg-pink2 data-[state=on]:text-white text-[16px] bg-wl2 px-2 sm:px-4 py-2 rounded-full flex items-center gap-2"
         >
           <GalleryHorizontalEnd strokeWidth={3} className="w-10 h-10" />
           Pack view
